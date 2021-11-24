@@ -26,17 +26,17 @@
 - 소문자로 구성
 
 ### 인터페이스
-- 대문자 카멜케이스
+- 대문자 카멜케이스  
   (ex: camel_case X, camelCase X, CamelCase O)
 - 명사, 형용사 이용
 
 ### 공통
-- 한국어 발음대로 표기 금지
+- 한국어 발음대로 표기 금지  
   (ex: 사용자 -> Sayongja X, User O)
 - 대문자로 표기할 약어는 목록에 별도로 명시
-  (ex: 대문자로 표기할 약어의 목록을 정의하지 않는 경우 : HttpApiUrl
-       API만 대문자로 표기할 약어의 목록에 있을 경우 : HttpAPIUrl
-       HTTP, API, URL이 대문자로 표기할 약어의 목록에 있을 경우 : HTTPAPIURL )
+  (ex: 대문자로 표기할 약어의 목록을 정의하지 않는 경우 : HttpApiUrl  
+       API만 대문자로 표기할 약어의 목록에 있을 경우 : HttpAPIUrl  
+       HTTP, API, URL이 대문자로 표기할 약어의 목록에 있을 경우 : HTTPAPIURL )  
 
 ***
 명명 규칙 이외의 팁
