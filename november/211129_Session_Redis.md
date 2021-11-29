@@ -42,14 +42,14 @@ In-Memory Data Structure Store
 Cache
 : 결과를 미리 저장해두었다가 나중에 요청이 들어오면 빠르게 서비스 해주는 것
 
-**예제 - Factorial**
+**예제 - Factorial**  
 n!은 1 ... n까지를 곱한 수를 의미한다.  
 만약 100000!과 100001!를 구해야한다고 가정해보자  
 100000!를 구한 뒤 이 결과를 다른 곳에 저장해두었다면?  
 100001!을 계산할 때 이용하여 빠르게 계산이 가능하다.
 
-**CPU Cache**
-![pic: imperva](../images/cpuCache.png)
+**CPU Cache**  
+![pic: imperva](../images/cpuCache.png)  
 위 그림을 보면 용량은 위로 갈수록 커지고 속도는 아래로 갈수록 빨라진다.  
 디스크에 접근하는 속도가 느리니 데이터를 메모리에 두고 접근하면 더 빠르게 접근할 수 있을 것이다.
 
@@ -69,11 +69,11 @@ n!은 1 ... n까지를 곱한 수를 의미한다.
 
 #### Redis 사용 유형
 **1. Look aside Cache**  
-![pic: imperva](../images/lookaside.png)
+![pic: imperva](../images/lookaside.png)  
 - 일반적으로 많이 사용하는 패턴
 
 **2. Write Back**  
-![pic: imperva](../images/writeback.png)
+![pic: imperva](../images/writeback.png)  
 - write 작업이 정말 많은 경우 사용  
   (쿼리문 1개를 100번 날리는 것보다 쿼리문 100개를 1번에 날리는 경우가 더 빠른다)
 - 단, DB에 저장되기 전에 장애가 생기면 데이터가 사라질 가능성이 있음
@@ -101,8 +101,8 @@ In-Memory 기준으로 랭킹 서버의 구현이 필요하다.
 
 만약 친구 B, C를 동시에 추가한다고 하면?  
 
-B가 추가되기 전에 C가 friends를 읽고 값을 수정했기 때문에 B를 추가한 내역이 사라졌다.
-![pic: imperva](../images/addBC.png)
+B가 추가되기 전에 C가 friends를 읽고 값을 수정했기 때문에 B를 추가한 내역이 사라졌다.  
+![pic: imperva](../images/addBC.png)  
 이를 Redis로 구현한다면?  
 Redis는 자료구조가 Atomic 하기 때문에 위와 같은 Race Condition 상황을 피할 수 있다.  
 다만 구조를 잘못 설계하면 발생할 수는 있다. (ex: 클릭을 빠르게 두번 눌러서 요청이 여러번 전송)
