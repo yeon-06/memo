@@ -22,3 +22,4 @@
 - 11/29 [Session과 Redis](https://github.com/yeon-06/TIL_challenge/blob/main/november/211129_Session_Redis.md)
 - 11/30 [Intellij 단축키](https://github.com/yeon-06/TIL_challenge/blob/main/november/211130_intelliJ_shortCut.md)
 - 12/01 [우테코 프리코스 1회차 피드백](https://github.com/yeon-06/TIL_challenge/blob/main/december/wooteco_precourse1_feedback.md)
+- 12/03 [MySQL 한글 깨짐](https://github.com/yeon-06/TIL_challenge/blob/main/december/mysql_utf8.md)
