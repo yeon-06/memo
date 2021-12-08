@@ -1,6 +1,6 @@
-우테코 프리코스 1주차를 진행하고 받은 피드백을 정리해둔다.
-> 1주차 후기: [https://yeonyeon.tistory.com/170](https://yeonyeon-tistory-com/170)  
-> 1주차 소스: [https://github-com/yeon-06/java-racingcar-precourse](https://github-com/yeon-06/java-racingcar-precourse)
+우테코 프리코스 2주차를 진행하고 받은 피드백을 정리해둔다.
+> 2주차 후기: [https://yeonyeon.tistory.com/170](https://yeonyeon.tistory.com/170)  
+> 2주차 소스: [https://github.com/yeon-06/java-racingcar-precourse](https://github.com/yeon-06/java-racingcar-precourse)
 
 <br>
 
