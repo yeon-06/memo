@@ -92,8 +92,8 @@ $ git push <remote이름> <push할 브랜치 이름>
 
 이전 커밋 취소하기
 ```
-$ git reset -soft HEAD^ -- 코드 유지
-$ git reset -hard HEAD^ -- 코드도 이전 커밋으로 변경
+$ git reset --soft HEAD^ -- 코드 유지
+$ git reset --hard HEAD^ -- 코드도 이전 커밋으로 변경
 ```
 <br>
 
