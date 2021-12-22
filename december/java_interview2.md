@@ -66,15 +66,57 @@ Call By Reference
 - 인자로 받은 값을 그대로 사용
 - 원래 값이 변경될 수 있음
 
-> Java는 Call By Value이다. TODO
->
->
+#### Java는 Call By Value
+Java에서 List나 사용자가 정의한 클래스 객체를 파라미터로 넘기면 원본 값도 변경된다.  
+이 부분에서 Call By Reference라고 착각할 수 있지만 Heap Memory 영역에 생성된 객체의 '주소'를 참조하기 때문에 Call By Value이다.
 
-## Java의 장단점 TODO
+## 접근 제어자
+> 제어자란?  
+> 클래스, 변수, 메소드 등의 선언부에 함께 사용되어 부가적인 의미를 부여
 
-## Java 접근 제어자 TODO
+private
+- 해당 클래스에서만 작동
 
-final 키워드에 대해서 설명해주세요. 각각의 쓰임에 따라 어떻게 동작하나요?
+default
+- 해당 패키지에서 작동
+
+protected
+- 동일 패키지 내의 클래스 또는 이 클래스를 상속받은 다른 패키지의 클래스
+
+public
+- 접근 제한 X
+
+## 기타 제어자
+
+static
+- 하나의 변수를 모든 인스턴스가 공유
+- 메모리에 한 번 할당되며 프로그램 종료 시 해제
+- interface 구현에 사용 불가능 -> 재사용성 ↓
+
+final
+- 재할당을 불가능하게 함
+- 메소드 -> 오버라이딩 불가
+- 클래스 -> 자신을 확장하는 자손 클래스 정의
+
+synchronized
+- 스레드 동기화 문제를 해결해 thread-safe를 지원하는 키워드
+- 여러 스레드가 하나의 공유 자원에 접근할 때, 현재 데이터를 사용하는 스레드를 제외한 스레드들은 데이터에 접근하지 못하게 함
+- 무분별한 동기화는 프로그램의 성능 저하를 일으킴
+
+abstract
+- 메소드의 선언부만 작성하고 실제 수행내용은 구현하지 않는 추상 메소드
+
+#### abstract vs interface
+abstract
+- abstract class를 상속 받는 자식 클래스들 간에 공통 기능을 구현하고 상속 받을 때 기능을 확장시킴
+- Java는 다중 상속을 지원하지 않기 때문에 abstract class만 사용하는건 한계가 존재  
+  (ex: 컴퓨터는 '게임기'일 수도 있고 '개발 도구'일 수도 있지만 '게임기'와 '개발 도구'를 동시에 상속받는 것이 Java에서는 불가능.)
+
+interface
+- 상속 관계에 얽메이지 않고 공통 기능이 필요할 때 사용
+- abstract method를 정의해놓고 구현하는 클래스 각 기능들을 overriding (다형성)
+
+...
 
 ## 데이터 타입 vs 변수
 
@@ -103,7 +145,23 @@ ArrayList
 - 크기를 동적임
 - 요소의 타입 원시형 불가능 (객체만 가능)
 
-## 컴파일러 vs 인터프리터 TODO
+## Compiler vs Interpreter
+
+Compiler
+- 고급 언어로 작성된 프로그램 전체를 목적 프로그램으로 번역 -> 컴퓨터에서 실행 가능한 실행 프로그램 생성
+- 번역 시간이 오래 걸리지만 한번 번역한 후에는 재번역의 필요가 없으므로 실행 속도 빠름
+- 실행 파일을 위한 메모리 필요
+- ex: Java, C, ...
+
+Interpreter
+- 고급 언어로 작성된 프로그램을 한줄 단위로 번역해 즉시 실행
+- 목적 프로그램의 생성이 없음
+- 시분할 시스템에 유용, 원시 프로그램의 변화에 대한 반응 빠름
+- 번역 속도는 빠르지만 매번 번역해야하므로 실행 속도가 느림
+- ex: Python, LISP, APL, ...
+
+#### 원시 프로그램이란?
+고급 언어나 어셈블리 언어로 작성된 프로그램
 
 ## Overloading vs Overriding
 
@@ -116,9 +174,33 @@ Overriding
 
 - 상위 클래스의 메소드를 하위 클래스에서 필요에 의해 재정의하는 것
 
-## 1급 객체 TODO
+## 1급 객체 
+- 변수나 데이터에 할당 가능
+- 객체의 인자로 넘길 수 있어야 함
+- return 값으로 사용 가능
 
-자료형, 자료구조
+Java8에서 람다식과 함수형 인터페이스의 등장으로 Java에서도 적용이 가능하게 됨  
+아래를 보면 Comparator interface 안에 compare()가 존재한다.
+```java
+public interface Comparator<T> {
+    int compare(T o1, T o2);
+}
+```
+
+이를 람다식으로 표현하면 아래와 같이 표현할 수 있다.
+```java
+Comparator<Long> comp = (Long o1, Log o2) -> o2 - o1 < 0 ? -1 : 1;
+```
+
+위 코드는 아래 코드와 동일하게 작동한다.
+```java
+interface CustomComparator implements Comparator {
+    @Override
+    public int compare(Long o1, Long o2) {
+        return o2 - o1 < 0 ? -1 : 1;
+    }
+}
+```
 
 ## Immutable Object
 
@@ -156,4 +238,7 @@ new 키워드를 이용한 경우는 Java Heap 영역에 새로운 객체의 형
 2. [Interview Question for Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java)
 3. [liner님 블로그 - singleton vs static](https://m.blog.naver.com/ss1511/221586516299)
 4. [마이너님 블로그 - String과 new String()의 차이는?](https://tomining.tistory.com/195)
-5. 
+5. [gilog님 블로그 - abstract vs interface](https://velog.io/@gillog/Java-Interface-vs-Abstract-Class-%EC%A0%95%EB%A6%AC)
+6. [코딩팩토리 - 컴파일러와 인터프리터](https://coding-factory.tistory.com/303)
+7. [강관우님 브런치 - 함수형 인터페이스](https://brunch.co.kr/@kd4/12)
+8. 
