@@ -1,5 +1,5 @@
 # TIL_challenge
-2021.11.09 ~ 2021.12.31 TIL 챌린지
+TIL 챌린지 (2021.11.09 ~ 진행중)
 
 ### Java
 - 2021/11/12 [for문 개선하기](https://github.com/yeon-06/TIL_challenge/blob/main/2021_2021/11/211112_for%EB%AC%B8_%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0.md)  
@@ -15,6 +15,8 @@
 - 2021/12/13 [java enum](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/java_enum.md)
 - 2021/12/16 [log4j 이슈](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/log4j_issue.md)
 - 2021/12/26 [Spring, MariaDB 연동 시 에러 목록](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/spring_connect_with_mariadb.md)
+- 2022/01/01 [JPA - 엔티티 매핑](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_Entity_Mapping.md)
+- 2022/01/02 [JPA - 연관 관계](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_relationship.md)
 
 ### Git
 - 2021/11/11 [깃허브 Pull Request와 코드리뷰](https://github.com/yeon-06/TIL_challenge/blob/main/2021_2021/11/211111_GitHub%EC%99%80_%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0.md)  
