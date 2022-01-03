@@ -17,6 +17,7 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2021/12/26 [Spring, MariaDB 연동 시 에러 목록](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/spring_connect_with_mariadb.md)
 - 2022/01/01 [JPA - 엔티티 매핑](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_Entity_Mapping.md)
 - 2022/01/02 [JPA - 연관 관계](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_relationship.md)
+- 2022/01/02 [JPA - 프록시와 영속성 전이](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_proxy_cascade.md)
 
 ### Git
 - 2021/11/11 [깃허브 Pull Request와 코드리뷰](https://github.com/yeon-06/TIL_challenge/blob/main/2021_2021/11/211111_GitHub%EC%99%80_%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0.md)  
