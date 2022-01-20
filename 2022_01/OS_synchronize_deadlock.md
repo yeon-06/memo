@@ -68,23 +68,28 @@ public class Singleton {
 > Race Condition: 하나의 자원을 여러 프로세스나 스레드가 접근할 때 발생할 수 있는 문제
 - 명령어 하나만으로 데이터를 읽고 쓰는 작업을 atomic하게 수행하기  
   (임계 구역 문제의 근본 원인은 데이터를 읽고 쓰는 동작을 하나의 명령어로 수행할 수 없기 때문)
+- **Spin Lock**
+  - 임계 구역에 진입 가능할 때까지 루프를 돌며 재시도
 - **Mutex**
-    - 하나의 프로세스가 공유 자원을 사용 중이면 다른 프로세스의 접근 막음
+  - 하나의 프로세스가 공유 자원을 사용 중이면 다른 프로세스의 접근 막음 (상호 배제)
 - **Semaphore**
-    - 자원의 상태를 나타내는 카운터
-    - 임계 구역에 지정 개수만큼 접근 가능
-    - 프로세스가 자원을 사용 중이면 세마포어 값을 변경해 다른 프로세스가 접근 시 대기 상태
+  - 자원의 상태를 나타내는 카운터
+  - 임계 구역에 지정 개수만큼 접근 가능
+  - 프로세스가 자원을 사용 중이면 세마포어 값을 변경해 다른 프로세스가 접근 시 대기 상태
 - **Monitor**
-    - `배타 동기 Queue`: 하나의 스레드만 공유자원에 접근할 수 있도록 하는 공간
-    - `조건 동기 Queue`: 진입 스레드가 block되며 새 스레드가 접근할 수 있도록 하는 공간
-    - 공유자원 접근 함수에는 최대 1개의 스레드만 진입 가능  
-      나머지는 `배타 동기 Queue`에서 대기
-    - `진입 스레드`가 조건 동기로 block되면 공유 자원에 `새 스레드` 접근 가능
-    - `새 스레드`는 `조건 동기로 block된 스레드`를 `notify()`를 통해 깨울 수 있음
-    - `깨워진 스레드`는 `현재 스레드`가 나가면 공유 자원에 다시 접근할 수 있음
+  - `배타 동기 Queue`: 하나의 스레드만 공유자원에 접근할 수 있도록 하는 공간
+  - `조건 동기 Queue`: 진입 스레드가 block되며 새 스레드가 접근할 수 있도록 하는 공간
+  - 공유자원 접근 함수에는 최대 1개의 스레드만 진입 가능  
+    나머지는 `배타 동기 Queue`에서 대기
+  - `진입 스레드`가 조건 동기로 block되면 공유 자원에 `새 스레드` 접근 가능
+  - `새 스레드`는 `조건 동기로 block된 스레드`를 `notify()`를 통해 깨울 수 있음
+  - `깨워진 스레드`는 `현재 스레드`가 나가면 공유 자원에 다시 접근할 수 있음
 
-- 임계 구역의 길이가 매우 짧다면 -> Block/Wake-up(모니터, 세마포어) 오버헤드보다 Busy/wait(뮤텍스) 오버헤드가 더 커질 수 있음
+- 임계 구역의 길이가 매우 짧다면 -> Block/Wake-up보다 Busy/wait 오버헤드가 더 커질 수 있음
 - 일반적으로는 Block/Wake-up 방식이 더 좋음
+
+> semaphore: 프로그래머가 직접 동기화  
+> monitor: OS가 알아서
 
 ### Bounded-Buffer Problem; Producer-Consumer Problem
 - `생산자 프로세스`: 데이터를 생성해 버퍼에 넣기
@@ -136,14 +141,21 @@ public class Singleton {
 - `Prevention`: 발생 조건 중 단 하나라도 불만족 시키기
 - `Avoidance`: 자원 요청에 대한 부가적인 정보를 이용해 데드락 가능성 없는 경우에만 자원 할당
 - `Detection and Recovery`: 발생 허용하되 발견 시 Recovery 작업
+  - Detection
+    - 자원당 단일 인스턴스: Resource-Allocation Graph 이용
+    - 자원당 멀티 인스턴스: Bankers's algorithm 이용
+  - Recovery
+    1) Process termination
+       - 모든 데드락된 프로세스 종료  
+       - 데드락 순환 종료될 때까지 하나씩 프로세스 종료
+    2) Resource Preemption
 - `Ignorance`: 책임 X
+  - 데드락은 매우 드문 상황 -> 조치가 더 큰 오버헤드 야기할 수 있음
+  - UNIX, Windows 등 범용 OS에서 채택
 
-> Deadlock Detection  
-> - 자원당 단일 인스턴스: Resource-Allocation Graph 이용  
-> - 자원당 멀티 인스턴스: Bankers's algorithm 이용
+> **Resource-Allocation Graph**  
+> request edge: 프로세스가 자원 요청  
+> assignment edge: 프로세스가 자원 요청할 수도 있음
 > 
-> Recovery
-> 1) Process termination  
-> -1) 모든 데드락된 프로세스 종료  
-> -2) 데드락 순환 종료될 때까지 하나씩 프로세스 종료
-> 2) Resource Preemption
+> 모든 edge를 고려해 cycle이 생성되면 자원 할당 X    
+> cycle 생성 여부 조사: O(n^2) 

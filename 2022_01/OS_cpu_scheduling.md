@@ -1,3 +1,5 @@
+> [이화여대 반효경 교수님의 강의](http://www.kocw.or.kr/home/cview.do?mty=p&kemId=1226304&ar=relateCourse) 를 들으며 정리한 내용입니다.
+
 ## 프로세스
 ### 프로세스 관련 시스템 콜
 - `fork()`: 자식 프로세스 생성 (부모 프로세스를 복제)
@@ -72,7 +74,7 @@
 > CPU 제어권을 CPU 스케줄러가 선택한 프로세스에게 넘김    
 > 위 과정을 `context switch`라고 함
 
-### Schedulign Criteria
+### Scheduling Criteria
 > = Performance Measures; 성능 척도
 - `CPU utilization`; 이용률
 - `throughput`; 처리량
@@ -121,19 +123,22 @@
     - starvation 발생 가능
   - `Time slice`
     - 각 큐에 CPU를 적절한 비율로 할당
-- `Multiple Processor Scheduling`; 다중 처리기 스케줄링
-  - CPU 여러개 존재하는 경우
-  - `Homogenous Processor`
-    - queue를 한줄로 만들어 프로세스가 알아서 꺼내가도록
-    - 특정 프로세서에서 수행되어야 하는 프로세스 있으면 복잡해짐
-  - `Load Sharing`
-    - 일부 프로세서에 job이 몰리지 않도록 부하 적절히 공유
-    - 별개 queue 또는 공동 queue
-  - `SMP`; `Symmetric Multiprocessing`
-    - 각 프로세서가 각자 알아서 스케쥴링 결정
-  - `Asymmetric Multiprocessing`
-    - 하나의 프로세서가 시스템 데이터의 접근, 공유 책임
-    - 나머지는 위 프로세서를 따름
+- `Multilevel Feedback Queue`
+  - `Multilevel Queue`와 유사하되 Ready Queue간 이동 가능
+
+### `Multiple Processor Scheduling`; 다중 처리기 스케줄링
+- CPU 여러개 존재하는 경우
+- `Homogenous Processor`
+  - queue를 한줄로 만들어 프로세스가 알아서 꺼내가도록
+  - 특정 프로세서에서 수행되어야 하는 프로세스 있으면 복잡해짐
+- `Load Sharing`
+  - 일부 프로세서에 job이 몰리지 않도록 부하 적절히 공유
+  - 별개 queue 또는 공동 queue
+- `SMP`; `Symmetric Multiprocessing`
+  - 각 프로세서가 각자 알아서 스케쥴링 결정
+- `Asymmetric Multiprocessing`
+  - 하나의 프로세서가 시스템 데이터의 접근, 공유 책임
+  - 나머지는 위 프로세서를 따름
 
 ### Real-Time Scheduling
 - 데드라인이 존재할 때의 스케줄링
