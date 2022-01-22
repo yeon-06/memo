@@ -1,4 +1,7 @@
-> 전체 후기: https://yeonyeon.tistory.com/176
+> 1주차 후기: [https://yeonyeon.tistory.com/165](https://yeonyeon.tistory.com/165)  
+> 2주차 후기: [https://yeonyeon.tistory.com/170](https://yeonyeon.tistory.com/170)  
+> 3주차 후기: [https://yeonyeon.tistory.com/172](https://yeonyeon.tistory.com/172)  
+> 합격 후 후기: [https://yeonyeon.tistory.com/176](https://yeonyeon.tistory.com/176)
 
 ## 서류 접수
 

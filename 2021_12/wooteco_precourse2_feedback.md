@@ -1,5 +1,9 @@
 우테코 프리코스 2주차를 진행하고 받은 피드백을 정리해둔다.
+> 1주차 후기: [https://yeonyeon.tistory.com/165](https://yeonyeon.tistory.com/165)  
 > 2주차 후기: [https://yeonyeon.tistory.com/170](https://yeonyeon.tistory.com/170)  
+> 3주차 후기: [https://yeonyeon.tistory.com/172](https://yeonyeon.tistory.com/172)  
+> 합격 후 후기: [https://yeonyeon.tistory.com/176](https://yeonyeon.tistory.com/176)
+> 
 > 2주차 소스: [https://github.com/yeon-06/java-racingcar-precourse](https://github.com/yeon-06/java-racingcar-precourse)
 
 <br>
@@ -50,3 +54,4 @@ private boolean isMaxPosition(int maxDistance) {
 
 
 - 비즈니스 로직과 UI 로직 분리
+
