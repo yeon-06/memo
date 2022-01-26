@@ -154,7 +154,7 @@
 - `Global scheduling`
   - 커널 레벨 스레드의 경우 커널의 단기 스케줄러가 스케줄링 결정
 
-### Algorithme Evaluation
+### Algorithm Evaluation
 - Queueing Models
   - 확률 분포로 주어지는 arrival rate와 service rate를 통해 각종 performance index 값 계산
 - Implementation & Measurement

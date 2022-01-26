@@ -253,7 +253,7 @@
 - `한계점`: 세그먼트 길이
 - 주소 변환 시 레지스터 2개의 도움받음
   - `Segment Table Base Register`; `STBR` - 실행중 프로세스의 세그먼트 테이블 메모리상 위치
-  - `Segment Table Length Registe`r; `STLR` - 세그먼트 개수
+  - `Segment Table Length Register`; `STLR` - 세그먼트 개수
 - `보호 비트`: 각 세그먼트에 대해 Read, Write, Exec 권한 확인
 - `유효 비트`: 각 세그먼트의 주소 변환 정보가 유효한지 (물리적 메모리에 적재되어 있는지)
 
