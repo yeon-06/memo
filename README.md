@@ -22,13 +22,20 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/01/14 [JPA 에러 - Entity insert 관련](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_pk_error.md)
 - 2022/01/21 [JPA - jpql 다루기](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/JPA_jpql.md)
 - 2022/01/24 [Spring 에러 - @Value is null](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Spring_Value_annotaion.md)
+- 2022/01/28 [Spring 에러 - parameter name information not found in class](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Spring_Error_parameter.md)
+- 2022/01/29 [Java - Array vs ArrayList](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Java_Array_ArrayList.md)
+- 2022/01/30 [Java - 버전별 차이](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Java_version.md)
+- 2022/01/31 [Java - String](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Java_String.md)
+
+### Network
+- 2022/02/02 [http - 상태 코드](https://github.com/yeon-06/TIL_challenge/blob/main/2022_02/http_status.md)
 
 ### Git
 - 2021/11/11 [깃허브 Pull Request와 코드리뷰](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211111_GitHub%EC%99%80_%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0.md)  
 - 2021/11/25 [커밋 메시지 적기](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211125_commit_message.md)
 - 2021/12/06 [Git 명령어 모음](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/git_command.md)
 - 2021/12/07 [Git 레포지토리 합치기](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/git_subtree.md)
-- 2022/01/24 [cherry pick 수행 시 발생 오류 목록](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Git_cherry_pick.md)
+- 2022/01/19 [cherry pick 수행 시 발생 오류 목록](https://github.com/yeon-06/TIL_challenge/blob/main/2022_01/Git_cherry_pick.md)
 
 ### DB
 - 2021/11/18 [nosql이란?](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211118_what_is_nosql.md)
@@ -46,10 +53,11 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2021/11/16 [백준 - 동전](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211116_%EB%B0%B1%EC%A4%80_%EB%8F%99%EC%A0%840.md)
 - 2021/11/20 [백준 - 스택](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211120_backjun_10828.md)
 - 2021/11/22 [백준 - 스도쿠](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211122_backjun_2580.md)
-- 2021/12/21 [백준 - 스도쿠](https://github.com/yeon-06/TIL_challenge/blob/main/2021_2021/12/programmers_find_prim_number.md)
+- 2021/12/21 [프로그래머스 - 소수 찾기](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/programmers_find_prim_number.md)
 
 ### 단축키
 - 11/30 [Intellij 단축키](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211130_intelliJ_shortCut.md)
+
 
 ### 면접 대비
 - 2021/11/09 [카ㅇㅇㅇ 면접 후기](https://github.com/yeon-06/TIL_challenge/blob/main/2021_11/211109_%EC%B2%AB_%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%A9%B4%EC%A0%91_%ED%9B%84%EA%B8%B0.md)
