@@ -28,6 +28,7 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/04/10 [Java - 정적 팩토리 메서드 사용법](./2022_04/why_use_static_factory_method.md)
 - 2022/04/12 [Java - try with resources 사용하기](./2022_04/try_with_resources.md)
 - 2022/04/17 [Java - Exception에 대해](./2022_04/exception.md)
+- 2022/05/05 [Java - 오류 로그 남기기](./2022_05/Java_printStackTrace.md)
 
 #### Spring
 - 2021/12/09 [MVC 패턴](https://github.com/yeon-06/TIL_challenge/blob/main/2021_12/mvc_pattern.md)
