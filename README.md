@@ -29,6 +29,8 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/04/12 [Java - try with resources 사용하기](./2022_04/try_with_resources.md)
 - 2022/04/17 [Java - Exception에 대해](./2022_04/exception.md)
 - 2022/05/05 [Java - 오류 로그 남기기](./2022_05/Java_printStackTrace.md)
+- 2022/05/09 [Java - dao vs repository](./2022_05/Repository_Dao.md)
+- 2022/05/12 [Java - Optional 파라미터로 사용하기](./2022_05/Dont_use_Optionfal.md)
 
 #### Spring
 - 2021/12/09 [MVC 패턴](./2021_12/mvc_pattern.md)
@@ -107,3 +109,4 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2021/12/08 [우테코 프리코스 2회차 피드백](./2021_12/wooteco_precourse2_feedback.md)
 - 2021/12/30 [우테코 최종 합격 후기](./2021_12/wooteco_precourse_final.md)
 - 2022/04/01 [etc - 페어프로그래밍](./2022_03/etc_페어프로그래밍.md)
+- 2022/05/10 [etc - next_id로 정렬하기](./2022_05/how_to_sort_next_id.md)
