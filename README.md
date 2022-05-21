@@ -31,6 +31,8 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/05/05 [Java - 오류 로그 남기기](./2022_05/Java_printStackTrace.md)
 - 2022/05/09 [Java - dao vs repository](./2022_05/Repository_Dao.md)
 - 2022/05/12 [Java - Optional 파라미터로 사용하기](./2022_05/Dont_use_Optionfal.md)
+- 2022/05/14 [Java - Optional 사용하지 말기](./2022_05/Dont_use_Optional2.md)
+- 2022/05/18 [Java - Duplicate key 에러](./2022_05/Duplicate_key.md)
 
 #### Spring
 - 2021/12/09 [MVC 패턴](./2021_12/mvc_pattern.md)
@@ -75,6 +77,7 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2021/11/18 [nosql이란?](./2021_11/211118_what_is_nosql.md)
 - 2021/11/29 [Session과 Redis](./2021_11/211129_Session_Redis.md)
 - 2021/12/03 [MySQL 한글 깨짐](./2021_12/mysql_utf8.md)
+- 2021/05/21 [counts vs exists](./2022_05/count_vs_exists.md)
 
 ### OS
 - 2022/01/09 [OS - 프로세스와 스레드](./2022_01/OS_thread_process.md)
