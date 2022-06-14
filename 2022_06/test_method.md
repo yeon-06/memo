@@ -46,14 +46,13 @@ class NicknameTest {
 AS-IS
 
 ```java
-@SuppressWarnings("NonAsciiCharacters")
-@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class CustomerAcceptanceTest {
 
+    @DisplayName("회원 가입 비밀번호 빈값으로 인해 실패")
     @Test
-    void 회원_가입_비밀번호_빈값으로_인해_실패() {
-        Map<String, Object> request = 회원_정보("leo123", "");
-        ExtractableResponse<Response> response = 회원_가입(request);
+    void sign_up_with_empty_password() {
+        Map<String, Object> request = createUserInfo("leo123", "");
+        ExtractableResponse<Response> response = signUp(request);
         assertThat(response.statusCode()).isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
 }
@@ -62,13 +61,14 @@ public class CustomerAcceptanceTest {
 TO-BE
 
 ```java
+@SuppressWarnings("NonAsciiCharacters")
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class CustomerAcceptanceTest {
 
-    @DisplayName("회원 가입 비밀번호 빈값으로 인해 실패")
     @Test
-    void sign_up_with_empty_password() {
-        Map<String, Object> request = createUserInfo("leo123", "");
-        ExtractableResponse<Response> response = signUp(request);
+    void 회원_가입_비밀번호_빈값으로_인해_실패() {
+        Map<String, Object> request = 회원_정보("leo123", "");
+        ExtractableResponse<Response> response = 회원_가입(request);
         assertThat(response.statusCode()).isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
 }
