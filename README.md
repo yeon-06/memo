@@ -33,6 +33,10 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/05/12 [Java - Optional 파라미터로 사용하기](./2022_05/Dont_use_Optionfal.md)
 - 2022/05/14 [Java - Optional 사용하지 말기](./2022_05/Dont_use_Optional2.md)
 - 2022/05/18 [Java - Duplicate key 에러](./2022_05/Duplicate_key.md)
+- 2022/05/23 [Java - @ComponentScan vs @EnableAutoConfiguration](./2022_05/@EnableAutoConfigure.md)
+- 2022/05/24 [Java - JGraphT 사용하기](./2022_05/JGraphT.md)
+- 2022/05/30 [Java - assertAll](./2022_05/assertAll.md)
+- 2022/06/06 [Java - 테스트 코드 한글로 작성하기](./2022_06/test_method.md)
 
 #### Spring
 - 2021/12/09 [MVC 패턴](./2021_12/mvc_pattern.md)
@@ -51,6 +55,8 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/04/29 [Spring - 여러 의존성 주입 만드는 경우](./2022_04/Spring_Injection2.md)
 - 2022/04/30 [Spring - @RequestBody가 빈 생성자 필요한 이유](./2022_04/Spring_RequestParam.md)
 - 2022/05/08 [Spring - Transaction 관리](./2022_05/Spring_Transaction.md)
+- 2022/05/25 [Spring - @Aspect는 컴포넌트 스캔 대상인가?](./2022_05/Spring_@Aspect.md)
+- 2022/06/12 [Spring - JdbcTemplate과 WHERE IN 절](./2022_06/NamedParameterJdbcTemplate_in.md)
 
 #### JPA
 - 2022/01/01 [JPA - 엔티티 매핑](./2022_01/JPA_Entity_Mapping.md)
@@ -61,6 +67,7 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2022/01/21 [JPA - jpql 다루기](./2022_01/JPA_jpql.md)
 - 2022/02/03 [JPA - 쿼리 메서드](./2022_02/JPA_query_method.md)
 - 2022/02/05 [JPA - QueryDSL](./2022_02/JPA_QueryDSL.md)
+- 2022/06/15 [JPA - 영속성](./2022_06/jpa_persistence.md)
 
 ### Network
 - 2022/02/02 [http - 상태 코드](./2022_02/http_status.md)
@@ -113,3 +120,4 @@ TIL 챌린지 (2021.11.09 ~ 진행중)
 - 2021/12/30 [우테코 최종 합격 후기](./2021_12/wooteco_precourse_final.md)
 - 2022/04/01 [etc - 페어프로그래밍](./2022_03/etc_페어프로그래밍.md)
 - 2022/05/10 [etc - next_id로 정렬하기](./2022_05/how_to_sort_next_id.md)
+- 2022/06/07 [etc - 깃허브에 설정 파일 올리기](./2022_06/properties.md)
