@@ -1,0 +1,5 @@
+- Java에서는 Native Thread를 지원한다. (1.1 버전에서는 Green Thread 지원)
+- Native Thread는 Kernel Level Thread이다
+- Green Thread는 User Level Thread이다
+- Thread Pool은 Thread를 끝없이 생성하는 경우 OS 자원이 빨리 소진되므로 이를 대처하기 위해 등장하였다
+- Executors를 통해 ThreadPool을 생성할 수 있다
