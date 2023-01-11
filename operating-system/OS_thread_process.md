@@ -77,7 +77,7 @@
 
 ### 멀티 스레드의 동기화 문제
 - 둘 이상의 스레드가 동일한 자원에 접근해 작업한 경우 문제 발생
-> [동기화와 데드락](./OS_synchronize_deadlock.md) 참고
+> [동기화와 데드락](OS_synchronize_deadlock.md) 참고
 
 ### PCB (=Process Control Block)
 - 멀티 태스킹에서 커널이 각 프로세스의 정보를 저장하고 관리하기 위해 사용  

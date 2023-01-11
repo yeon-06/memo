@@ -1,4 +1,4 @@
-> [이 글](./DNS.md) 에서 이어집니다.
+> [이 글](DNS.md) 에서 이어집니다.
 
 client --(조회 메시지)--> DNS server  
 client <--(응답 메시지)-- DNS server

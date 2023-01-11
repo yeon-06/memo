@@ -1,4 +1,4 @@
-> [이전 글](./browser_url.md)
+> [이전 글](browser_url.md)
 
 ### 브라우저와 서버 통신 과정
 

@@ -1,6 +1,6 @@
 ### DTO에 Optional 쓰지 않기
 
-> [지난 글](./Dont_use_Optionfal.md) 에 이어서 Optional을 쓰지 말아야하는 경우를 좀 더 설명해보겠다.
+> [지난 글](Dont_use_Optionfal.md) 에 이어서 Optional을 쓰지 말아야하는 경우를 좀 더 설명해보겠다.
 
 DTO라 하면 controller에서 @RequestBody 등을 통해 필요한 데이터를 담아오는 등의 역할을 하기도 한다. 
 DTO에도 물론 null일 수도 있는 값이 존재할 수는 있다. 
