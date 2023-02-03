@@ -1,4 +1,4 @@
-> 패키지에 대한건 [패키지, 임포트, 클래스, 인스턴스 글](./Java_built_in_package.md)을 참고하길 바란다.  
+> 패키지에 대한건 [패키지, 임포트, 클래스, 인스턴스 글](./built_in_package.md)을 참고하길 바란다.  
 > 전체 글: https://yeonyeon.tistory.com/191
 
 패키지는 크게 Built-in packages와 User-defined packages로 나뉜다.

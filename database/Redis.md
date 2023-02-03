@@ -82,33 +82,3 @@ n!은 1 ... n까지를 곱한 수를 의미한다.
 ### 🪂 Redis를 왜 사용하는가?
 Collection을 잘 이용함으로써 여러 개발 시간을 단축시키고 문제를 줄여줄 수 있기 때문이다.  
 아래 두 가지 예제를 살펴보자.
-
-<br>
-
-#### 1. 랭킹 서버 구현
-가장 심플한 방법으로는 DB에 유저 score를 저장하고 order by로 정렬해 읽어오기가 있다.  
--> 속도에 문제
-
-In-Memory 기준으로 랭킹 서버의 구현이 필요하다.  
-직접 구현하기는 힘들지만 Redis의 Sorted Set을 이용하면 랭킹을 손쉽게 구현할 수 있다.
-
-#### 2. 친구 리스트
-친구 리스트를 key-value 형태로 저장한다고 가정할 때, A가 B를 친구로 추가하면 아래와 같은 과정을 거친다.
-
-1. 친구 리스트 friends: 123읽기
-2. friends:123 끝에 친구 B 추가
-3. 해당 값을 friends:123에 저장
-
-만약 친구 B, C를 동시에 추가한다고 하면?  
-
-B가 추가되기 전에 C가 friends를 읽고 값을 수정했기 때문에 B를 추가한 내역이 사라졌다.  
-![pic: imperva](../images/addBC.png)  
-이를 Redis로 구현한다면?  
-Redis는 자료구조가 Atomic 하기 때문에 위와 같은 Race Condition 상황을 피할 수 있다.  
-다만 구조를 잘못 설계하면 발생할 수는 있다. (ex: 클릭을 빠르게 두번 눌러서 요청이 여러번 전송)
-
-***
-### 참고
-
-- https://www.imperva.com/learn/availability/sticky-session-persistence-and-cookies/
-- 우아한 테크 세미나 - [우아한 레디스 by 강대명님](https://www.youtube.com/watch?v=mPB2CZiAkKM)
