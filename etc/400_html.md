@@ -9,3 +9,5 @@
 ### 해결 방법
 - url에 넣는 데이터에 /가 포함되지 않도록 한다.
 - GET이 아닌 POST 형태로 바꿔 데이터를 body에 넣는다.
+- GET형태를 유지하는 경우, query parameter로 데이터를 받아온다.
+- UrlPathHelper를 통해 문자열 그대로 받도록 설정을 변경한다.
